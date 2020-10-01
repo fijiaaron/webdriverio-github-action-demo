@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es2019", "dom"],
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "types": [
+            "node",
+            "@wdio/sync",
+            "@wdio/mocha-framework",
+            "@types/mocha"
+        ],
+        "typeRoots" : ["./node_modules/@types", "./type-definitions-folder"]
+    },
+    "include": [
+        "./test/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ] 
+}
