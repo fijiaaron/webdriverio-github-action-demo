@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio"
+    "test": "wdio",
+    "test-headless": "wdio run wdio.headless.conf.js",
+    "spec": "wdio run --spec",
+    "spec-headless": "wdio run wdio.headless.conf.js --spec"
   },
   "repository": {
     "type": "git",

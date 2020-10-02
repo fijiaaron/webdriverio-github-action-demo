@@ -1,22 +1,31 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "ES2015",
+        "module": "commonjs",
         "lib": ["es2019", "dom"],
         "esModuleInterop": true,
-        "experimentalDecorators": true,
+        "experimentalDecorators": true, 
+        "emitDecoratorMetadata": true,
         "baseUrl": ".",
+        "paths": {
+            "*": [ "./*" ],
+            "src/*": ["./src/*"]
+        },
         "types": [
-            "node",
-            "@wdio/sync",
+            "node", 
+            "@wdio/sync", 
             "@wdio/mocha-framework",
             "@types/mocha"
         ],
-        "typeRoots" : ["./node_modules/@types", "./type-definitions-folder"]
+        "typeRoots" : [
+            "./node_modules/@types", 
+            "./type-definitions-folder"
+        ]
     },
     "include": [
         "./test/**/*.ts"
     ],
     "exclude": [
-        "node_modules"
-    ] 
+        
+    ]
 }
